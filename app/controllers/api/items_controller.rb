@@ -7,6 +7,7 @@ class Api::ItemsController < ApplicationController
     @item.save
     @error_messages = @item.errors.messages if @item.errors.present?
     @error_messages = @error_messages.merge(@brand_error_message) if @brand_error_message
+    @error_messages = @error_messages.keys.map {|key| {column:key, name: Item.human_attribute_name(key.to_s), messages: @error_messages[key]}} if @error_messages
   end
 
   def update

@@ -7,7 +7,7 @@ class Item < ApplicationRecord
 
   validates :name, :price, :detail, :condition, :delivery_fee_payer, :delivery_method, :delivery_agency, :delivery_days, :deal, presence: true
   validates :price, numericality:{greater_than_or_equal_to: 300,less_than_or_equal_to: 9999999}
-  validates :item_images, length: { minimum: 1, message: "がありません。"}
+  validates :item_images, length: { minimum: 1, message: "がありません"}
 
   ## カテゴリーでitemを検索
   ## 条件に配列を渡すと、配列の中身全てをチェックしてくれる

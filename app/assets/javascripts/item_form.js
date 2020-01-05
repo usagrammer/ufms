@@ -174,9 +174,9 @@ document.addEventListener('turbolinks:load', function () {
         if (item.error_messages) { // item.error_messagesがある場合、何かしらエラーが発生している
           // バリデーションエラーメッセージを表示していく
           $(`.error-field`).text(""); // バリデーションエラーメッセージをリセット
-          Object.keys(item.error_messages).forEach(function (key) {
+          item.error_messages.forEach(function (error) {
             // メッセージは2件以上入っている場合があるが先頭の1つだけを表示
-            $(`.error-field[data-column-name="${key}"]`).text(item.error_messages[key][0]);
+            $(`.error-field[data-column-name="${error.column}"]`).text(`${error.name}${error.messages[0]}`);
           });
           // アラートを表示して中断
           alert("商品出品に失敗しました");

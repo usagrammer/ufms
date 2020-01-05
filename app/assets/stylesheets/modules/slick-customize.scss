@@ -2,6 +2,10 @@
   bottom: 0;
 }
 
+.slick-arrow {
+  z-index: 9999;
+}
+
 .campaign-arrow-prev {
   left: 5rem;
 }
@@ -12,4 +16,8 @@
 
 .slick-list {
   height: 100%;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
 }

@@ -1,0 +1,21 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
+      item: 商品
+    attributes:
+      item:
+        id: ID
+        name: 商品名
+        price: 価格
+        detail: 説明文
+        condition: 状態
+        delivery_fee_payer: 送料負担者
+        delivery_method: 発送方法
+        delivery_agency: 発送元地域
+        delivery_days: 発送にかかる日数
+        deal: 取引状態
+        category: カテゴリ
+        item_images: 商品画像
+        category_id: カテゴリ
+        seller_id: 販売者ID

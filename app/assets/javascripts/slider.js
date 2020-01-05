@@ -3,8 +3,8 @@ document.addEventListener("turbolinks:load", function () {
   $(".campaigns").slick({
     dots: true, // 下部の点々を表示する
     dotsClass: "slick-dots campaign-dots", // 点々のclassを指定する
-    prevArrow: `<button type="button" class="slick-prev campaign-arrow-prev">Previous</button>`, // 矢印のcssを指定する
-    nextArrow: `<button type="button" class="slick-next campaign-arrow-next">Next</button>` // 矢印のcssを指定する
+    prevArrow: `<button type="button" class="slick-prev slick-arrow campaign-arrow-prev">Previous</button>`, // 矢印のcssを指定する
+    nextArrow: `<button type="button" class="slick-next slick-arrow campaign-arrow-next">Next</button>` // 矢印のcssを指定する
   });
   ////トップページのキャンペーンバナー////
 
