@@ -7,7 +7,7 @@
         %span.button__text
           -# @auth_textには「で登録する」や「でログイン」が入る
           メールアドレス#{@auth_text}
-  = link_to user_facebook_omniauth_authorize_path do
+  = link_to user_facebook_omniauth_authorize_path, method: :post do
     .button.facebook
       = icon "fab", "facebook-square", class: "button__facebook-icon"
       %span.button__text
